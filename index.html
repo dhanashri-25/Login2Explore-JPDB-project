@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Enrollment Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-3xl">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">
+        Student Enrollment Form
+      </h2>
+
+      <form id="studentForm" method="post" class="space-y-6">
+        <div>
+          <label for="rollNo" class="block text-gray-700 font-semibold mb-2"
+            >Roll No:</label
+          >
+          <input
+            type="text"
+            id="rollNo"
+            name="rollNo"
+            placeholder="Enter Roll No"
+            onchange="getRollNo()"
+            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+          <label for="fullName" class="block text-gray-700 font-semibold mb-2"
+            >Full Name:</label
+          >
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter Full Name"
+            disabled
+            class="w-full px-4 py-2 border rounded-lg bg-gray-100"
+          />
+        </div>
+
+        <div>
+          <label for="class" class="block text-gray-700 font-semibold mb-2"
+            >Class:</label
+          >
+          <input
+            type="text"
+            id="class"
+            name="class"
+            placeholder="Enter Class"
+            disabled
+            class="w-full px-4 py-2 border rounded-lg bg-gray-100"
+          />
+        </div>
+
+        <div>
+          <label for="birthDate" class="block text-gray-700 font-semibold mb-2"
+            >Birth Date:</label
+          >
+          <input
+            type="date"
+            id="birthDate"
+            name="birthDate"
+            disabled
+            class="w-full px-4 py-2 border rounded-lg bg-gray-100"
+          />
+        </div>
+
+        <div>
+          <label for="address" class="block text-gray-700 font-semibold mb-2"
+            >Address:</label
+          >
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter Address"
+            disabled
+            class="w-full px-4 py-2 border rounded-lg bg-gray-100"
+          />
+        </div>
+
+        <div>
+          <label
+            for="enrollmentDate"
+            class="block text-gray-700 font-semibold mb-2"
+            >Enrollment Date:</label
+          >
+          <input
+            type="date"
+            id="enrollmentDate"
+            name="enrollmentDate"
+            disabled
+            class="w-full px-4 py-2 border rounded-lg bg-gray-100"
+          />
+        </div>
+
+        <div class="flex space-x-4 justify-center pt-4">
+          <button
+            type="button"
+            id="save"
+            onclick="saveData()"
+            disabled
+            class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            id="update"
+            onclick="updateData()"
+            disabled
+            class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition"
+          >
+            Update
+          </button>
+          <button
+            type="button"
+            id="reset"
+            onclick="resetForm()"
+            disabled
+            class="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
