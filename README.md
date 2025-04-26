@@ -56,7 +56,8 @@ The UI is designed with **TailwindCSS** for a clean, modern, and responsive expe
 ## Illustrations
 
 > UI Overview:  
-> ![Enrollment Form Screenshot](./screenshot.png)
+> ![image](https://github.com/user-attachments/assets/293fa43b-a0c0-4552-83a2-0f01d7597fcf)
+
 
 > Form Actions:
 
